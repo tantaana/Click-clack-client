@@ -5,9 +5,10 @@ import AllTitle from '../../../Hooks/AllTitle/AllTitle';
 
 const Home = () => {
     AllTitle('Home')
+
     return (
         <div>
-            <h2>hello</h2>
+            <h2 className='text-5xl'>hello</h2>
             <FontAwesomeIcon icon={faCoffee} />
         </div>
     );
