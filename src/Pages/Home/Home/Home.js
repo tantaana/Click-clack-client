@@ -8,7 +8,7 @@ const Home = () => {
 
     return (
         <div>
-            <h2 className='text-5xl'>hello</h2>
+            <h2 className='text-5xl'>helloss</h2>
             <FontAwesomeIcon icon={faCoffee} />
         </div>
     );
