@@ -2,24 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Main from "../../Layouts/Main";
 import Home from "../../Pages/Home/Home/Home";
 
-///// Tanvir Import Start (5-20) /////
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-///// Tanvir Import End (5-20) /////
-
-///// Parvez Import Start (22-40) /////
+///// Tanvir Import Start (5-35) /////
 
 
 
@@ -37,9 +20,6 @@ import Home from "../../Pages/Home/Home/Home";
 
 
 
-///// Parvez Import End (22-40) /////
-
-///// Amir Import Start (42-60) /////
 
 
 
@@ -52,12 +32,77 @@ import Home from "../../Pages/Home/Home/Home";
 
 
 
+///// Tanvir Import End (5-35) /////
+
+///// Parvez Import Start (37-70) /////
 
 
 
 
 
-///// Amir Import End (42-60) /////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///// Parvez Import End (37-70) /////
+
+///// Amir Import Start (72-105) /////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///// Amir Import End (72-105) /////
 
 export const router = createBrowserRouter([
     {
@@ -69,7 +114,7 @@ export const router = createBrowserRouter([
                 element: <Home />
             },
 
-            ////// Tanvir Area Start (72-100) //////
+            ////// Tanvir Area Start (117-170) //////
 
 
 
@@ -97,9 +142,7 @@ export const router = createBrowserRouter([
 
 
 
-            ////// Tanvir Area End (72-100) //////
 
-            ////// Parvez Area Start (102-130) //////
 
 
 
@@ -124,12 +167,12 @@ export const router = createBrowserRouter([
 
 
 
+            ////// Tanvir Area End (117-170) //////
 
+            ////// Parvez Area Start (172-230) //////
 
 
-            ////// Parvez Area End (102-130) //////
 
-            ////// Amir Area Start (132-160) //////
 
 
 
@@ -157,7 +200,94 @@ export const router = createBrowserRouter([
 
 
 
-            ////// Amir Area End (132-160) //////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            ////// Parvez Area End (172-230) //////
+
+            ////// Amir Area Start (232-290) //////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            ////// Amir Area End (232-290) //////
         ]
     }
 ])
