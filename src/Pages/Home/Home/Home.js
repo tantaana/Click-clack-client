@@ -1,6 +1,5 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import BannerSection from '../../../Component/HomeComponent/BannerSection';
 import AllTitle from '../../../Hooks/AllTitle/AllTitle';
 
 const Home = () => {
@@ -8,8 +7,7 @@ const Home = () => {
 
     return (
         <div>
-            <h2 className='text-5xl'>helloss</h2>
-            <FontAwesomeIcon icon={faCoffee} />
+            <BannerSection/>
         </div>
     );
 };
