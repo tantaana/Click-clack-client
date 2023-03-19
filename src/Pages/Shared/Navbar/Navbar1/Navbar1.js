@@ -26,7 +26,7 @@ const Navbar1 = () => {
             </div>
 
             <div className='flex justify-center items-center'>
-                <Link to='#' className='flex justify-center items-center gap-2 hover:text-gray-400 hover:ease-in-out hover:duration-200'>
+                <Link to='/stores' className='flex justify-center items-center gap-2 hover:text-gray-400 hover:ease-in-out hover:duration-200'>
                     <MdLocationOn className='text-xl' />
                     <h2 className='font-bold uppercase'>Stores</h2>
                 </Link>
