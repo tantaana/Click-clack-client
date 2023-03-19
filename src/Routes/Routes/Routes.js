@@ -3,7 +3,7 @@ import Main from "../../Layouts/Main";
 import Home from "../../Pages/Home/Home/Home";
 
 ///// Tanvir Import Start (5-35) /////
-
+import Shop from "../../Pages/Shop/Shop";
 
 
 
@@ -115,7 +115,7 @@ export const router = createBrowserRouter([
             },
 
             ////// Tanvir Area Start (117-170) //////
-
+            { path: '/shop', element: <Shop /> },
 
 
 

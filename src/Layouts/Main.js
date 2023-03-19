@@ -1,9 +1,18 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
+import Navbar1 from '../Pages/Shared/Navbar/Navbar1/Navbar1';
+import Navbar2 from '../Pages/Shared/Navbar/Navbar2/Navbar2';
 
 const Main = () => {
+    let location = useLocation();
     return (
-        <Outlet />
+        <div>
+            <Navbar1 />
+            <Navbar2 />
+            <Outlet />
+
+            {/* {location.pathname !== '/specialities' && <Footer></Footer>} */}
+        </div>
     );
 };
 

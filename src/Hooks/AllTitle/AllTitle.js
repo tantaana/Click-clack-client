@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 
 const AllTitle = (title) => {
     useEffect(() => {
-        document.title = `${title} - Click Clack`;
+        document.title = `Click Clack | ${title}`;
     }, [title])
 };
 
