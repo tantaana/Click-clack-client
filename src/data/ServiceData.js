@@ -1,4 +1,4 @@
-[
+const ServiceData = [
     {
         "id": 1,
         "img": "https://i.ibb.co/xHNJT9b/jacket.png",
@@ -30,3 +30,5 @@
         "name": "Gloves & Mittens"
     }
 ]
+
+export default ServiceData;
