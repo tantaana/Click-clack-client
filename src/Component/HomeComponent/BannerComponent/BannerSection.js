@@ -1,6 +1,6 @@
 import React from "react";
 import "./BannerSection.css";
-import bannerimg from '../../assets/images/bannerimg.png'
+import bannerimg from '../../../assets/images/bannerimg.png'
 
 const BannerSection = () => {
   return (
