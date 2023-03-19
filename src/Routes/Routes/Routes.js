@@ -4,9 +4,9 @@ import Home from "../../Pages/Home/Home/Home";
 
 ///// Tanvir Import Start (5-35) /////
 import Shop from "../../Pages/Shop/Shop";
-
-
-
+import About from "../../Pages/About/About";
+import Blog from "../../Pages/Blog/Blog";
+import Contact from "../../Pages/Contact/Contact";
 
 
 
@@ -116,9 +116,9 @@ export const router = createBrowserRouter([
 
             ////// Tanvir Area Start (117-170) //////
             { path: '/shop', element: <Shop /> },
-
-
-
+            { path: '/blog', element: <Blog /> },
+            { path: '/about', element: <About /> },
+            { path: '/contact', element: <Contact /> },
 
 
 
