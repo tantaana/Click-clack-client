@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
     return (
-        <div className='border border-black'>
+        <div>
             <h2>contact</h2>
         </div>
     );
