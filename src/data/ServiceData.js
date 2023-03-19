@@ -2,7 +2,7 @@ const ServiceData = [
     {
         "id": 1,
         "img": "https://i.ibb.co/xHNJT9b/jacket.png",
-        "name": "Jackets & Outerwear"
+        "name": "Jackets"
     },
     {
         "id": 2,
