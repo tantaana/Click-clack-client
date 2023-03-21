@@ -22,12 +22,12 @@ const Navbar2 = () => {
     };
     return (
         <div className='py-8 px-10 2xl:px-20 grid grid-cols-3'>
-            <div className='flex justify-start 2xl:justify-center items-center border border-black'>
+            <div className='flex justify-start 2xl:justify-center items-center'>
                 <Link to='/' className='hover:scale-105 hover:ease-in-out hover:duration-300 text-3xl xl:text-4xl'>
                     <h2 className='text-center font-bold tracking-widest uppercase'>Click clack</h2></Link>
             </div>
 
-            <div className='flex justify-end lg:justify-center items-center border border-black'>
+            <div className='flex justify-end lg:justify-center items-center'>
                 <div className="hidden lg:flex justify-center items-center gap-4 xl:gap-6 2xl:gap-8">
                     <NavLink to='/' style={activeLinks}><h2 className='text-base xl:text-lg font-semibold tracking-widest hover:text-gray-400 hover:ease-in-out hover:duration-300 uppercase'>Home</h2></NavLink>
 
@@ -45,7 +45,7 @@ const Navbar2 = () => {
                 </div>
             </div>
 
-            <div className='flex justify-end 2xl:justify-center items-center gap-6 2xl:gap-10 border border-black'>
+            <div className='flex justify-end 2xl:justify-center items-center gap-6 2xl:gap-10'>
                 <AiOutlineHeart className='text-3xl hover:text-gray-400 hover:ease-in-out hover:duration-300' />
                 <div className='flex justify-center items-center gap-2 hover:text-gray-400 hover:ease-in-out hover:duration-300'>
                     <RiShoppingCartFill className='text-3xl' />
