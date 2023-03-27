@@ -14,7 +14,7 @@ const NavBlog = () => {
     return (
         <div class="dropdown inline-block relative">
             <button class="inline-flex items-center">
-                <NavLink to='/blog' style={activeLinks}><span class="text-base xl:text-lg font-semibold tracking-widest flex justify-center items-center gap-1 uppercase hover:text-gray-400 hover:ease-in-out hover:duration-300">Blog <MdOutlineArrowDropDown className='m-0 p-0' /></span></NavLink>
+                <NavLink to='/blog' style={activeLinks}><span class="text-base xl:text-lg font-semibold tracking-widest flex justify-center items-center gap-1 uppercase hover:text-gray-400 ease-in-out duration-300">Blog <MdOutlineArrowDropDown className='m-0 p-0' /></span></NavLink>
             </button>
 
             <ul class="bg-white hidden dropdown-menu absolute lg:left-[-450px] px-4 py-2 w-[1000px]">
