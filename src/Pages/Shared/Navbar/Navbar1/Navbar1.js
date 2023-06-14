@@ -1,38 +1,46 @@
-import React from 'react';
-import { GrFacebookOption } from 'react-icons/gr'
-import { AiOutlineTwitter } from 'react-icons/ai'
-import { FaPinterestP } from 'react-icons/fa'
-import { RiInstagramFill } from 'react-icons/ri'
-import { AiFillYoutube } from 'react-icons/ai'
-import { GrSearch } from 'react-icons/gr'
-import { MdLocationOn } from 'react-icons/md';
-import { Link } from 'react-router-dom'
+import React from "react";
+import { GrFacebookOption } from "react-icons/gr";
+import { AiOutlineTwitter } from "react-icons/ai";
+import { FaPinterestP } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
+import { AiFillYoutube } from "react-icons/ai";
+import { GrSearch } from "react-icons/gr";
+import { MdLocationOn } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const Navbar1 = () => {
-    return (
-        <div className='hidden py-2 md:grid grid-cols-3'>
+  return (
+    <div className="hidden py-2 md:grid grid-cols-3">
+      <div className="flex md:gap-6 lg:gap-10 xl:gap-16 2xl:gap-20 justify-center items-center text-xl text-black">
+        <GrFacebookOption className="hover:text-gray-400 ease-in-out duration-300 hover:cursor-pointer" />
+        <AiOutlineTwitter className="hover:text-gray-400 ease-in-out duration-300 hover:cursor-pointer" />
+        <FaPinterestP className="hover:text-gray-400 ease-in-out duration-300 hover:cursor-pointer" />
+        <RiInstagramFill className="hover:text-gray-400 ease-in-out duration-300 hover:cursor-pointer" />
+        <AiFillYoutube className="hover:text-gray-400 ease-in-out duration-300 hover:cursor-pointer" />
+      </div>
 
-            <div className='flex md:gap-6 lg:gap-10 xl:gap-16 2xl:gap-20 justify-center items-center text-xl'>
-                <GrFacebookOption className='hover:text-gray-400 ease-in-out duration-300' />
-                <AiOutlineTwitter className='hover:text-gray-400 ease-in-out duration-300' />
-                <FaPinterestP className='hover:text-gray-400 ease-in-out duration-300' />
-                <RiInstagramFill className='hover:text-gray-400 ease-in-out duration-300' />
-                <AiFillYoutube className='hover:text-gray-400 ease-in-out duration-300' />
-            </div>
+      <div className="flex justify-center items-center gap-1">
+        <GrSearch className="font-bold text-2xl" />
+        <input
+          type="text"
+          placeholder="Search..."
+          className="input rounded-none border border-gray-400 input-sm w-full"
+        />
+      </div>
 
-            <div className='flex justify-center items-center gap-1'>
-                <GrSearch className='font-bold text-2xl' />
-                <input type="text" placeholder="Search..." className="input rounded-none border border-gray-400 input-sm w-full" />
-            </div>
-
-            <div className='flex justify-center items-center'>
-                <Link to='/stores' className='flex justify-center items-center gap-2 hover:text-gray-400 ease-in-out duration-300'>
-                    <MdLocationOn className='text-xl' />
-                    <h2 className='font-bold uppercase'>Stores</h2>
-                </Link>
-            </div>
-        </div>
-    );
+      <div className="flex justify-center items-center">
+        <Link
+          to="/stores"
+          className="flex justify-center items-center gap-2 hover:text-gray-400 text-black ease-in-out duration-300"
+        >
+          <MdLocationOn className="text-2xl" />
+          <h2 className="font-bold text-sm tracking-widest uppercase">
+            Stores
+          </h2>
+        </Link>
+      </div>
+    </div>
+  );
 };
 
 export default Navbar1;
