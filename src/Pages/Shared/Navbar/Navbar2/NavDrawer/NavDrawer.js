@@ -46,43 +46,76 @@ const NavDrawer = () => {
             <Drawer
                 open={isOpen}
                 onClose={toggleDrawer}
+                size={300}
                 direction='right'
                 lockBackgroundScroll={false}
-                className={open1 || open2 ? 'overflow-y-scroll' : 'overflow-y-hidden'}
+                className="overflow-y-auto overflow-x-hidden"
             >
-                <div className='h-full w-full mr-6'>
-                    <div className='flex justify-end p-2'>
+                <div className='w-full'>
+                    <div className='flex justify-end mr-8 mt-6'>
                         <ImCross onClick={() => setIsOpen(false)} className='text-3xl font-bold hover:text-gray-400 ease-in-out duration-300' />
                     </div>
-                    <div className='w-full h-full mt-10'>
-                        <div className='flex flex-col items-center text-lg font-semibold gap-10 w-full h-full'>
+                    <div className='w-full my-10'>
+                        <div className='flex flex-col text-lg font-semibold gap-10 w-full h-full ml-10'>
                             <Link to='/' onClick={() => setIsOpen(false)} className='uppercase hover:text-gray-400 ease-in-out duration-300'>Home</Link>
-                            <div className='flex flex-col items-center gap-2'>
+                            <div className='flex gap-2'>
                                 <Link to='/shop' onClick={() => setIsOpen(false)} className='uppercase hover:text-gray-400 ease-in-out duration-300'>Shop</Link>
-                                <div className='flex flex-col items-center'>
-                                    <button onClick={toggle1}>{!open1 ? <AiOutlinePlus /> : <AiOutlineMinus />}</button>
+                                <div className='flex flex-col'>
+                                    <button onClick={toggle1} className="mt-1">{!open1 ? <AiOutlinePlus /> : <AiOutlineMinus />}</button>
                                     <>{open1 &&
-                                        <>
+                                        <div className='relative right-14 mt-6'>
                                             <h2 className='uppercase font-semibold mb-3 text-base'><u>Categories</u></h2>
-                                            <div className='flex flex-col gap-2'>
+                                            <div className='grid grid-cols-1 gap-2'>
                                                 <Link to='/shop/jackets' onClick={() => setIsOpen(false)} class="uppercase hover:text-gray-400 ease-in-out duration-300 text-base">Jackets & Outwear</Link>
                                                 <Link to='/shop/pants' onClick={() => setIsOpen(false)} class="uppercase hover:text-gray-400 ease-in-out duration-300 text-base">Pants</Link>
                                                 <Link to='/shop/tshirts' onClick={() => setIsOpen(false)} class="uppercase hover:text-gray-400 ease-in-out duration-300 text-base">T-shirts</Link>
+                                                <Link to='/shop/backpacks' onClick={() => setIsOpen(false)} class="uppercase hover:text-gray-400 ease-in-out duration-300 text-base">Backpacks</Link>
+                                                <Link to='/shop/hats' onClick={() => setIsOpen(false)} class="uppercase hover:text-gray-400 ease-in-out duration-300 text-base">Hats & Beanies</Link>
+                                                <Link to='/shop/gloves' onClick={() => setIsOpen(false)} class="uppercase hover:text-gray-400 ease-in-out duration-300 text-base">Gloves & Mittens</Link>
                                             </div>
-                                        </>
+                                        </div>
                                     }</>
                                 </div>
                             </div>
-                            <Link to='/blog' onClick={() => setIsOpen(false)} className='uppercase hover:text-gray-400 ease-in-out duration-300'>Blog</Link>
-                            <Link to='/about' onClick={() => setIsOpen(false)} className='uppercase hover:text-gray-400 ease-in-out duration-300'>About</Link>
-                            <div>
-                                <button onClick={toggle2} className="flex justify-center items-center"><Link to='/about'>problem</Link> {!open2 ? <AiOutlinePlus /> : <AiOutlineMinus />}</button>
-                                {open2 &&
-                                    <>
-                                        <div><Link to='/ama'>Amader</Link></div>
-                                    </>
-                                }
+                            <div className='flex gap-2'>
+                                <Link to='/shop' onClick={() => setIsOpen(false)} className='uppercase hover:text-gray-400 ease-in-out duration-300'>Shop</Link>
+                                <div className='flex flex-col'>
+                                    <button onClick={toggle1} className="mt-1">{!open1 ? <AiOutlinePlus /> : <AiOutlineMinus />}</button>
+                                    <>{open1 &&
+                                        <div className='relative right-14 mt-6'>
+                                            <h2 className='uppercase font-semibold mb-3 text-base'><u>Categories</u></h2>
+                                            <div className='grid grid-cols-1 gap-2'>
+                                                <Link to='/shop/jackets' onClick={() => setIsOpen(false)} class="uppercase hover:text-gray-400 ease-in-out duration-300 text-base">Jackets & Outwear</Link>
+                                                <Link to='/shop/pants' onClick={() => setIsOpen(false)} class="uppercase hover:text-gray-400 ease-in-out duration-300 text-base">Pants</Link>
+                                                <Link to='/shop/tshirts' onClick={() => setIsOpen(false)} class="uppercase hover:text-gray-400 ease-in-out duration-300 text-base">T-shirts</Link>
+                                                <Link to='/shop/backpacks' onClick={() => setIsOpen(false)} class="uppercase hover:text-gray-400 ease-in-out duration-300 text-base">Backpacks</Link>
+                                                <Link to='/shop/hats' onClick={() => setIsOpen(false)} class="uppercase hover:text-gray-400 ease-in-out duration-300 text-base">Hats & Beanies</Link>
+                                                <Link to='/shop/gloves' onClick={() => setIsOpen(false)} class="uppercase hover:text-gray-400 ease-in-out duration-300 text-base">Gloves & Mittens</Link>
+                                            </div>
+                                        </div>
+                                    }</>
+                                </div>
                             </div>
+                            <div className='flex gap-2'>
+                                <Link to='/shop' onClick={() => setIsOpen(false)} className='uppercase hover:text-gray-400 ease-in-out duration-300'>Shop</Link>
+                                <div className='flex flex-col'>
+                                    <button onClick={toggle1} className="mt-1">{!open1 ? <AiOutlinePlus /> : <AiOutlineMinus />}</button>
+                                    <>{open1 &&
+                                        <div className='relative right-14 mt-6'>
+                                            <h2 className='uppercase font-semibold mb-3 text-base'><u>Categories</u></h2>
+                                            <div className='grid grid-cols-1 gap-2'>
+                                                <Link to='/shop/jackets' onClick={() => setIsOpen(false)} class="uppercase hover:text-gray-400 ease-in-out duration-300 text-base">Jackets & Outwear</Link>
+                                                <Link to='/shop/pants' onClick={() => setIsOpen(false)} class="uppercase hover:text-gray-400 ease-in-out duration-300 text-base">Pants</Link>
+                                                <Link to='/shop/tshirts' onClick={() => setIsOpen(false)} class="uppercase hover:text-gray-400 ease-in-out duration-300 text-base">T-shirts</Link>
+                                                <Link to='/shop/backpacks' onClick={() => setIsOpen(false)} class="uppercase hover:text-gray-400 ease-in-out duration-300 text-base">Backpacks</Link>
+                                                <Link to='/shop/hats' onClick={() => setIsOpen(false)} class="uppercase hover:text-gray-400 ease-in-out duration-300 text-base">Hats & Beanies</Link>
+                                                <Link to='/shop/gloves' onClick={() => setIsOpen(false)} class="uppercase hover:text-gray-400 ease-in-out duration-300 text-base">Gloves & Mittens</Link>
+                                            </div>
+                                        </div>
+                                    }</>
+                                </div>
+                            </div>
+                            <Link to='/about' onClick={() => setIsOpen(false)} className='uppercase hover:text-gray-400 ease-in-out duration-300'>About</Link>
                             <Link to='/contact' onClick={() => setIsOpen(false)} className='uppercase hover:text-gray-400 ease-in-out duration-300'>Contact</Link>
                         </div>
                     </div>
